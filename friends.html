@@ -4,8 +4,9 @@
     <link rel="stylesheet" href="css/styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Friends - Kokoa Clone</title>
+    <title>Welcome to Kokoa Talk</title>
   </head>
+
   <body>
     <div class="status-bar">
       <div class="status-bar__column">
@@ -16,33 +17,55 @@
         <span>18:43</span>
       </div>
       <div class="status-bar__column">
-        <span>110%</span>
-        <i class="fas fa-battery-full fa-lg"></i>
-        <i class="fas fa-bolt"></i>
+        <span>90%</span>
+        <img class="charging" src="icons8-charging-64.png" width="20px" />
       </div>
     </div>
 
+    <header class="screen-header">
+      <h1 class="screen-header__title">Friends</h1>
+      <div class="screen-header__icons">
+        <span> <i class="fas fa-search fa-lg"></i> </span>
+        <span> <i class="fas fa-music fa-lg"></i> </span>
+        <span> <i class="fas fa-cog fa-lg"></i> </span>
+      </div>
+    </header>
+    <a href="" id="friends-display-link">
+      <i class="fas fa-info-circle"></i> Friends' Names Display
+      <i class="fas fa-chevron-right fa-xs"></i>
+    </a>
     <nav class="nav">
       <ul class="nav__list">
-        <li class="nav__btn">
+        <li class="nav_btn">
           <a class="nav__link" href="friends.html"
-            ><i class="fas fa-user fa-lg"></i
+            ><i class="fas fa-user fa-2x"></i
           ></a>
         </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="#"><i class="far fa-comment fa-lg"></i></a>
+        <li class="nav_btn">
+          <a class="nav__link" href="#">
+            <i class="far fa-comment fa-2x"></i>
+            <nav class="nav__notification">1</nav>
+          </a>
         </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="#"><i class="fas fa-search fa-lg"></i></a>
+        <li class="nav_btn">
+          <a class="nav__link" href="#"><i class="fas fa-search fa-2x"></i></a>
         </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="#"
-            ><i class="fas fa-ellipsis-h fa-lg"></i
-          ></a>
+        <li class="nav_btn">
+          <a class="nav__link" href="#">
+            <i class="fas fa-ellipsis-h fa-2x">
+              <nav class="nav__notification"></nav>
+            </i>
+          </a>
+          <div class="user-component">
+            <div class="user-component__column">
+              <img src="#" alt="" class="user-component__avatar" />
+              <div class="user-component__text"></div>
+            </div>
+            <div class="user-component__column"></div>
+          </div>
         </li>
       </ul>
     </nav>
-
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"
       crossorigin="anonymous"
