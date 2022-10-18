@@ -3,7 +3,10 @@
   justify-content: center;
   width: 100%;
   position: fixed;
-  padding: 5px 3px;
+  padding: 5px 13px;
+  box-sizing: border-box;
+  top: 0px;
+  border-bottom: var(--main-border);
 }
 
 .status-bar__column {

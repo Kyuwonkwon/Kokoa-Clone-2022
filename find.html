@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Friends - Kokoa Talk</title>
+    <title>Find - Kokoa Talk</title>
   </head>
 
   <body>
@@ -24,53 +24,66 @@
 
     <header class="screen-header">
       <h1 class="screen-header__title">
-        <span> Friends </span>
+        <span> Find </span>
       </h1>
       <div class="screen-header__icons">
         <span> <i class="fas fa-search fa-2x"></i> </span>
-        <span> <i class="fas fa-music fa-2x"></i> </span>
-        <span> <i class="fas fa-cog fa-2x"></i> </span>
+        <span class="setting__noti">
+          <i class="fas fa-cog fa-2x"></i>
+          <div class="badge nav__notification nav__notification--xs"></div>
+        </span>
       </div>
     </header>
-    <a href="" id="friends-display-link">
-      <i class="fas fa-info-circle"></i> Friends' Names Display
-      <i class="fas fa-chevron-right fa-xs"></i>
-    </a>
-    <main class="friends-screen">
-      <div class="user-component">
-        <div class="user-component__column">
-          <img
-            src="IU.jpg"
-            class="user-component__avatar user-component__avatar--xl"
-          />
-          <div class="user-component__text">
-            <h4 class="user-component__title">IU</h4>
-            <!-- <h6 class="user-component__subtitle">Hi</h6> -->
-          </div>
+
+    <main class="main-screen">
+      <div class="icon-row">
+        <div class="icon-row__icon">
+          <i class="fas fa-qrcode fa-2x"></i>
+          <span>QR Code</span>
         </div>
-        <div class="user-component__column"></div>
-      </div>
-      <div class="friends-screen__channel">
-        <div class="friends-screen__channel-header">
-          Channel<i class="fas fa-chevron-up fa-xs"></i>
+        <div class="icon-row__icon">
+          <i class="far fa-address-book fa-2x"></i>
+          <span>Add by Contacts</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="fas fa-fingerprint fa-2x"></i>
+          <span>Add by ID</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="far fa-envelope fa-2x"></i>
+          <span>Invite</span>
         </div>
       </div>
-      <div class="user-component">
-        <div class="user-component__column">
-          <img
-            src="IU.jpg"
-            class="user-component__avatar user-component__avatar--sm"
-          />
-          <div class="user-component__text">
-            <h4 class="user-component__title user-component__title--not-bold">
-              Channel
-            </h4>
-          </div>
-        </div>
-        <div class="user-component__column">
-          <div>
-            <span>2</span>
+      <div class="recommended-friends">
+        <h6 class="recommended-friends__title">Recommended Friends</h6>
+        <span>You have no recommended friends.</span>
+      </div>
+      <div class="open-chat">
+        <div class="open-chat__header">
+          <h4>Open Chat</h4>
+          <span>
+            Go to Openchat Home
             <i class="fas fa-chevron-right fa-xs"></i>
+          </span>
+        </div>
+        <div class="open-post">
+          <div class="open-post__column">
+            <h5 class="open-post__title">#BTS</h5>
+            <h6 class="open-post__hashtags">#bts#army#friends</h6>
+            <div class="open-post__members">
+              <img src="IU.jpg" />
+              <span class="open-post__member-count">802 memebers</span>
+              <div class="divider"></div>
+              <span class="open-post__member-status">Active</span>
+            </div>
+          </div>
+          <div class="open-post__column">
+            <div class="open-post__photo">
+              <img src="IU.jpg" />
+              <div class="open-post__heart-count">
+                <i class="fas fa-heart"></i><span>326</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -80,7 +93,7 @@
       <ul class="nav__list">
         <li class="nav_btn">
           <a class="nav__link" href="friends.html">
-            <i class="fas fa-user fa-2x"></i>
+            <i class="far fa-user fa-2x"></i>
           </a>
         </li>
         <li class="nav_btn">
