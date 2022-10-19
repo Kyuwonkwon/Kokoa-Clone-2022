@@ -4,7 +4,8 @@
   width: 100%;
 }
 
-.icon-row__icon:first-child and :last-child {
+.icon-row__icon:first-child,
+.icon-row__icon:last-child {
   width: 17%;
 }
 
