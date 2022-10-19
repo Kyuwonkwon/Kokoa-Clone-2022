@@ -6,7 +6,7 @@
   padding: 5px 13px;
   box-sizing: border-box;
   top: 0px;
-  border-bottom: var(--main-border);
+  background-color: white;
 }
 
 .status-bar__column {
@@ -32,6 +32,6 @@
   align-items: center;
 }
 
-.status-bar__column .charging {
+.status-bar__column:last-child i {
   margin-left: 10px;
 }
