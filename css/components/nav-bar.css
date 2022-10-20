@@ -22,8 +22,14 @@
   0% {
     transform: none;
   }
+  33% {
+    transform: translateY(-3.3px) rotateZ(5deg);
+  }
   50% {
-    transform: translateY(-5px) rotateZ(5deg);
+    transform: translateY(-5px) rotateZ(0deg);
+  }
+  67% {
+    transform: translateY(-3.3px) rotateZ(-5deg);
   }
   100% {
     transform: none;
@@ -36,7 +42,8 @@
   height: 28px;
   left: 15px;
   bottom: 10px;
-  animation: notificationAnimation 2s ease-in-out 3;
+  will-change: transform;
+  animation: notificationAnimation 1s linear 3;
 }
 
 .nav__notification--xs {
