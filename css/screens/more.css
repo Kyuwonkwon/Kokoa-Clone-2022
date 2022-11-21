@@ -22,6 +22,12 @@
   border-top: var(--main-border);
 }
 
+.icon-row__icon span {
+  font-size: 16px;
+  white-space: nowrap;
+  margin-top: 10px;
+}
+
 .more-suggestions__icons {
   display: flex;
   width: 100%;
@@ -39,6 +45,10 @@
 }
 .more-suggestions__icon:last-child {
   width: 17%;
+}
+
+.more-suggestions__icon-text {
+  white-space: nowrap;
 }
 
 .more-suggestions__icon-image i {
